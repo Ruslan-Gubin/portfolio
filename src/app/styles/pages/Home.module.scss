@@ -1,0 +1,23 @@
+.root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.logoContainer {
+  width: max-content;
+  width: 100px;
+  height: 30px;
+  background-color: gray;
+}
+
+.logoImage {
+  max-width: 100px;
+  max-height: 30px;
+}
