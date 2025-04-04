@@ -1,8 +1,10 @@
-//import type { Metadata } from "next";
-import { Roboto } from "@/shared/utils/init-fonts";
+import { fontUbuntu } from "@/shared/utils/init-fonts";
 
 import "./styles/globals.scss";
+import styles from "./styles/pages/Layout.module.scss";
 import { getMetadata } from "@/shared/utils/get-metadata";
+import { LayoutHeader } from "@/widgets/layout/layout-header/LayoutHeader";
+import { LayoutFooter } from "@/widgets/layout/layout-footer/LayoutFooter";
 
 export const generateMetadata = async () =>
   getMetadata({
@@ -16,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={Roboto.variable}>
+    <html lang="en" className={fontUbuntu.variable}>
       <head>
         <link
           rel="apple-touch-icon"
@@ -37,7 +39,11 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body>{children}</body>
+      <body className={styles.layoutWrapper}>
+        <LayoutHeader />
+        <main className={styles.layoutMainContent}>{children}</main>
+        <LayoutFooter />
+      </body>
     </html>
   );
 }

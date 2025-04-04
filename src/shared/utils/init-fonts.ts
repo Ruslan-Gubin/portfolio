@@ -1,33 +1,28 @@
 import localFont from "next/font/local";
 
-export const Roboto = localFont({
+export const fontUbuntu = localFont({
   src: [
     {
-      path: "../../../public/fonts/Roboto-Light.ttf",
+      path: "../../../public/fonts/Ubuntu-Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Roboto-Regular.ttf",
+      path: "../../../public/fonts/Ubuntu-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Roboto-Medium.ttf",
+      path: "../../../public/fonts/Ubuntu-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Roboto-Bold.ttf",
+      path: "../../../public/fonts/Ubuntu-Bold.ttf",
       weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../../public/fonts/Roboto-Black.ttf",
-      weight: "900",
       style: "normal",
     },
   ],
   adjustFontFallback: false,
-  variable: "--Roboto",
+  variable: "--Ubuntu",
 });

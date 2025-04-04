@@ -1,0 +1,15 @@
+.headerSection {
+  height: 90px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--max-with-container);
+  width: var(--with-container);
+  display: flex;
+  margin: 0 auto;
+}
+
+.headerLeftSideTitle {
+  font-size: 20px;
+}

@@ -1,20 +1,28 @@
 @forward "common/libs";
 @forward "common/function";
 
-// :root {
-//   --main: #333;
-//   --main-rgb: 51,51,51;
-//   color-scheme: light;
-// }
+:root {
+  --gray-color-text: #4a4a4a;
+  --yellow-dark-color: #b19386;
+  --footer-bg-color: #1c1d25;
+  --light-text-color: #f3f3f3;
+  --bg-body-color: #f3f3f3;
+  --max-with-container: 95vw;
+  --with-container: 1280px;
+  color-scheme: light;
+}
 
 body {
   font-weight: 400;
-  font-family: var(--Roboto);
+  font-family: var(--Ubuntu);
+  color: var(--gray-color-text);
+  background-color: var(--bg-body-color);
 
   &::-webkit-scrollbar {
     height: 8px;
     width: 8px;
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: #c4c4c4;
     border-radius: 10px;
@@ -22,7 +30,5 @@ body {
 }
 
 // .dark {
-//   --main: #fff;
-//   --main-rgb: 255,255,255;
 //   color-scheme: dark;
 // }
