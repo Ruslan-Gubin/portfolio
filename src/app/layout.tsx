@@ -10,12 +10,6 @@ export const generateMetadata = async () =>
     description: "Generate by create next app",
   });
 
-//export const metadata: Metadata = getMetadata({
-//  title: "Next App",
-//  description: "Generate by create next app",
-//  url: "as",
-//});
-
 export default function RootLayout({
   children,
 }: Readonly<{
