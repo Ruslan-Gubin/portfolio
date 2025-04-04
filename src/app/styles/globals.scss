@@ -9,6 +9,10 @@
   --bg-body-color: #f3f3f3;
   --max-with-container: 95vw;
   --with-container: 1280px;
+  --font-size-title: 32px;
+  --font-size-navigation: 16px;
+  --font-size-header-title: 30px;
+  --table-small: 670px;
   color-scheme: light;
 }
 
@@ -17,6 +21,7 @@ body {
   font-family: var(--Ubuntu);
   color: var(--gray-color-text);
   background-color: var(--bg-body-color);
+  user-select: none;
 
   &::-webkit-scrollbar {
     height: 8px;

@@ -1,12 +1,17 @@
 .headerNavigate {
-  height: 30px;
-  width: 100px;
-
-  color: red;
-  font-size: 50px;
+  @media (max-width: 670px) {
+    display: none;
+  }
 }
 
-.headerNavigateTitle {
-  color: red;
-  font-size: 20px;
+.headerNavList {
+  display: flex;
+  column-gap: 30px;
+}
+
+.headerNavItem {
+  font-size: var(--font-size-navigation);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
 }

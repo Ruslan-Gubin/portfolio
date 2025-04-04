@@ -7,9 +7,12 @@
   max-width: var(--max-with-container);
   width: var(--with-container);
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+  border-bottom: 1px solid gray;
 }
 
-.headerLeftSideTitle {
-  font-size: 20px;
+.headerSectionTitle {
+  font-size: var(--font-size-header-title);
+  font-weight: 500;
 }

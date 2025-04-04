@@ -1,0 +1,159 @@
+.burgerMenu {
+  display: none;
+  background-color: green;
+
+  @media (max-width: 670px) {
+    display: block;
+  }
+}
+
+.burgerMenuButton {
+  width: 42px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.burgerMenuButtonLine {
+  height: 3px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: var(--gray-color-text);
+}
+
+@media (max-width: 670px) {
+  .burgerMenu {
+    display: block;
+  }
+}
+
+.mobileMenu {
+  display: none;
+  @media (max-width: 670px) {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--footer-bg-color);
+    color: var(--light-text-color);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(
+      to right bottom,
+      #1c1d25,
+      #292a32,
+      #36373f,
+      #44454c
+    );
+  }
+}
+
+.closeButton {
+  width: 42px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  background-color: transparent;
+}
+
+.closeButtonLine {
+  height: 3px;
+  width: 42px;
+  background-color: var(--light-text-color);
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 4px;
+}
+
+.closeButtonLineSecond {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding-left: 15%;
+}
+
+.navListItem {
+  font-size: var(--font-size-header-title);
+  color: var(--light-text-color);
+  font-weight: 800;
+  position: relative;
+}
+
+.mobileMenuOpen {
+  animation: openMenu 0.4s ease-out 0s 1 normal forwards;
+  .closeButton {
+    scale: 0;
+    animation: closeButtonShow 0.4s ease-out 0.4s 1 normal forwards;
+  }
+  .navListItem {
+    left: -500px;
+    animation: navMenuItemShow 0.2s ease 0.3s 1 normal forwards;
+  }
+}
+.mobileMenuClose {
+  animation: closeMenu 0.4s ease-out 0s 1 normal forwards;
+  .closeButton {
+    opacity: 1;
+    scale: 1;
+    animation: closeButtonHidden 0.2s ease-out 0s 1 normal forwards;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes closeButtonHidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes closeButtonShow {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes navMenuItemShow {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}

@@ -1,9 +1,19 @@
 import styles from "./LayoutHeaderNavigate.module.scss";
 
-const LayoutHeaderNavigate = () => {
+type Props = {
+  navList: string[];
+};
+
+const LayoutHeaderNavigate = ({ navList }: Props) => {
   return (
     <nav className={styles.headerNavigate}>
-      <h1 className={styles.headerLeftSideTitle}>Server Navigate</h1>
+      <ul className={styles.headerNavList}>
+        {navList.map((item) => (
+          <li key={item} className={styles.headerNavItem}>
+            {item}
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 };
