@@ -1,4 +1,5 @@
 .headerNavigate {
+  position: relative;
   @media (max-width: 670px) {
     display: none;
   }
@@ -14,4 +15,19 @@
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 500;
+  a {
+    color: var(--gray-color-text);
+  }
+}
+
+.activeLine {
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  top: 51px;
+  right: 0px;
+  background-color: gray;
+  border-radius: 20px;
+  transition: right 0.4s linear;
+  box-shadow: 1px 1px 5px 1px white;
 }

@@ -13,6 +13,7 @@
   --font-size-navigation: 16px;
   --font-size-header-title: 30px;
   --table-small: 670px;
+  --header-height: 90px;
   color-scheme: light;
 }
 
@@ -22,6 +23,7 @@ body {
   color: var(--gray-color-text);
   background-color: var(--bg-body-color);
   user-select: none;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
     height: 8px;

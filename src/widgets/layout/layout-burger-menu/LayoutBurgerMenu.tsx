@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
 import styles from "./LayoutBurgerMenu.module.scss";
+import Link from "next/link";
 
 type Props = {
   navList: string[];
@@ -19,9 +20,9 @@ const LayoutBurgerMenu = ({ navList }: Props) => {
     menuRef.current.classList.remove(
       isOpen ? styles.mobileMenuClose : styles.mobileMenuOpen,
     );
+    document.body.style.overflow = !isOpen ? "auto" : "hidden";
     setIsOpen((prev) => !prev);
   };
-  console.log(navList);
 
   return (
     <>
@@ -52,8 +53,9 @@ const LayoutBurgerMenu = ({ navList }: Props) => {
               style={{ animationDuration: `${(index + 1) * 0.2}s` }}
               key={item}
               className={styles.navListItem}
+              onClick={handleToggleMenu}
             >
-              {item}
+              <Link href={`/#${item}`}>{item}</Link>
             </li>
           ))}
         </ul>

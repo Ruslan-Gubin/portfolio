@@ -2,7 +2,7 @@ import styles from "./LayoutHeader.module.scss";
 import { LayoutHeaderNavigate } from "../layout-header-navigate/LayoutHeaderNavigate";
 import { LayoutBurgerMenu } from "../layout-burger-menu/LayoutBurgerMenu";
 
-const navList = ["About", "Technologies", "Projects", "Contact"];
+const navList = ["about", "technologies", "projects", "contact"];
 
 const LayoutHeader = () => {
   return (

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./LayoutHeaderNavigate.module.scss";
 
 type Props = {
@@ -10,10 +11,13 @@ const LayoutHeaderNavigate = ({ navList }: Props) => {
       <ul className={styles.headerNavList}>
         {navList.map((item) => (
           <li key={item} className={styles.headerNavItem}>
-            {item}
+            <Link href={`/#${item}`} legacyBehavior>
+              {item}
+            </Link>
           </li>
         ))}
       </ul>
+      <div className={styles.activeLine}></div>
     </nav>
   );
 };
