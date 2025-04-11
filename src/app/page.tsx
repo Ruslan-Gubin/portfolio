@@ -5,11 +5,11 @@ import { HomeTechnologies } from "@/widgets/home/home-technologies/HomeTechnolog
 export default function Home() {
   return (
     <div className={styles.root}>
-      {/*
       <div id="about" style={{ paddingTop: 90 }}>
         <HomeAbout />
       </div>
-      */}
+      {/*
+       */}
       <div id="technologies" style={{ paddingTop: 90 }}>
         <HomeTechnologies />
       </div>
