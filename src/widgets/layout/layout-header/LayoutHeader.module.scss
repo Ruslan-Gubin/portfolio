@@ -9,11 +9,11 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  border-bottom: 1px solid lightgray;
   position: sticky;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
+  background-color: var(--bg-body-color);
 }
 
 .headerSectionTitle {

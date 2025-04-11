@@ -1,4 +1,21 @@
 .aboutSection {
-  height: 500px;
-  border-bottom: 1px solid black;
+  height: calc(100vh - 90px);
+  min-height: 420px;
+  max-width: var(--with-container);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleText {
+  font-size: var(--font-size-title-section);
+  padding-bottom: 30px;
+  line-height: 70%;
+}
+
+.subTitle {
+  font-size: var(--font-size-subTitle-section);
+  max-width: 500px;
+  line-height: 150%;
 }
