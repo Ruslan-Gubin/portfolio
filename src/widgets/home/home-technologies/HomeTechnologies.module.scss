@@ -14,12 +14,17 @@
   font-size: var(--font-size-title-section);
   padding-bottom: 30px;
   line-height: 70%;
+  position: relative;
+  animation: titleAnimation 0.4s linear 0s 1 normal forwards;
 }
 
 .subTitle {
   font-size: var(--font-size-subTitle-section);
   max-width: 800px;
   line-height: 150%;
+  position: relative;
+  top: 50px;
+  animation: titleAnimation 0.4s linear 0.1s 1 normal forwards;
 }
 
 .technologiesBlock {
@@ -35,6 +40,8 @@
 
 .technologiesTitle {
   font-weight: 600;
+  position: relative;
+  animation: technologiesTitleAnimation 0.4s linear 0s 1 normal forwards;
 }
 
 .technologiesList {
@@ -54,4 +61,23 @@
 .technologiesImage {
   width: 100px;
   height: 50px;
+}
+
+@keyframes titleAnimation {
+  0% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes technologiesTitleAnimation {
+  0% {
+    opacity: 0.3;
+    left: -50px;
+  }
+  100% {
+    left: 0;
+  }
 }
