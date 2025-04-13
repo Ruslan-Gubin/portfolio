@@ -59,8 +59,9 @@
 }
 
 .technologiesImage {
-  width: 100px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 @keyframes titleAnimation {
