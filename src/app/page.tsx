@@ -1,6 +1,7 @@
 import { HomeAbout } from "@/widgets/home/home-about/HomeAbout";
-import styles from "./styles/pages/Home.module.scss";
 import { HomeTechnologies } from "@/widgets/home/home-technologies/HomeTechnologies";
+import { HomeContact } from "@/widgets/home/home-contact/HomeContact";
+import styles from "./styles/pages/Home.module.scss";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <HomeTechnologies />
       </div>
       <div id="projects" style={{ paddingTop: 90 }}>
-        <HomeAbout />
+        <HomeContact />
       </div>
       <div id="contact" style={{ paddingTop: 90 }}>
         <HomeAbout />

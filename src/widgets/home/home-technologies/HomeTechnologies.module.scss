@@ -1,84 +1,38 @@
 .homeTechnologies {
-  height: calc(100vh - 90px);
-  min-height: 420px;
-  max-width: var(--with-container);
+  width: var(--with-container);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 30px;
   padding-block: 60px;
-  // background-color: orange;
+  position: relative;
+  max-width: var(--max-with-container);
 }
 
 .titleText {
   font-size: var(--font-size-title-section);
-  padding-bottom: 30px;
-  line-height: 70%;
   position: relative;
-  animation: titleAnimation 0.4s linear 0s 1 normal forwards;
-}
 
-.subTitle {
-  font-size: var(--font-size-subTitle-section);
-  max-width: 800px;
-  line-height: 150%;
-  position: relative;
-  top: 50px;
-  animation: titleAnimation 0.4s linear 0.1s 1 normal forwards;
-}
-
-.technologiesBlock {
-  display: flex;
-}
-
-.technologiSection {
-  font-size: var(--font-size-subTitle-section);
-  width: 50%;
-  min-height: 450px;
-  padding-right: 30px;
-}
-
-.technologiesTitle {
-  font-weight: 600;
-  position: relative;
-  animation: technologiesTitleAnimation 0.4s linear 0s 1 normal forwards;
-}
-
-.technologiesList {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  padding-top: 30px;
-}
-
-.technologiesItem {
-  height: 50px;
-  width: 100%;
-  font-size: 18px;
-  line-height: normal;
-}
-
-.technologiesImage {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-}
-
-@keyframes titleAnimation {
-  0% {
-    top: 50px;
-  }
-  100% {
-    top: 0;
+  @media (max-width: 760px) {
+    font-size: 40px;
   }
 }
 
-@keyframes technologiesTitleAnimation {
-  0% {
-    opacity: 0.3;
-    left: -50px;
-  }
-  100% {
-    left: 0;
-  }
-}
+// @keyframes titleAnimation {
+//   0% {
+//     top: 50px;
+//   }
+//   100% {
+//     top: 0;
+//   }
+// }
+//
+// @keyframes technologiesTitleAnimation {
+//   0% {
+//     opacity: 0.3;
+//     left: -50px;
+//   }
+//   100% {
+//     left: 0;
+//   }
+// }
