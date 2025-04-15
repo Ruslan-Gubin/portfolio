@@ -11,9 +11,11 @@ export default function Home() {
         <HomeAbout />
       </div>
        */}
+      {/*
       <div id="technologies" style={{ paddingTop: 90 }}>
         <HomeTechnologies />
       </div>
+        */}
       <div id="projects" style={{ paddingTop: 90 }}>
         <HomeContact />
       </div>
